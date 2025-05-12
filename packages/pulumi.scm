@@ -7,11 +7,11 @@
 (define-public pulumi
   (package
     (name "pulumi")
-    (version "3.146.0")
+    (version "3.169.0")
     (source (origin
               (method url-fetch)
               (uri (string-append "https://github.com/pulumi/pulumi/releases/download/v" version "/pulumi-v" version "-linux-x64.tar.gz"))
-              (sha256 "0j8sm75njy1vfincnvm4bbm0ifylklxis8ymg3xzxvz2ig4hy8v3")))
+              (sha256 "03vjcmhkpxibjz9gkjvr6p2wjfg1gf6xb52gqqvw0qmnlrw3yg01")))
     (build-system copy-build-system)
     (arguments '(#:install-plan '(("pulumi" "bin/"))))
     (home-page "https://www.pulumi.com")
